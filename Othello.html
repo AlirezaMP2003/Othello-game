@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Othello</title>
+    <link rel="stylesheet" href="Othello.css">
+</head>
+<body>
+
+    <div id="formDiv">
+        <div id="formContainer">
+            <form>
+                <input type="text" placeholder="Enter first player's name" required id="firstRed">
+                <div style="border: 1px solid gray;width: 100%;margin-bottom: 30px;"></div>
+                <input type="text" placeholder="Enter second player's name" required id="secondBlue">
+                <div style="border: 1px solid gray;width: 100%;margin-bottom: 30px;"></div>
+                <input type="submit" value="Start" id="formBTN" onclick="startGame()">
+            </form>
+            <!-- <button id="formBTN" onclick="startGame()">Start</button> -->
+        </div>
+    </div>
+
+    <div id="bigContainer" style="display: none;">
+
+        <div id="leftDiv">
+            <h2 id="firstName"></h2>
+            <div id="redBlock">2</div>
+            <h2 id="firstTotalScore"></h2>
+        </div>
+
+        <div id="centerDiv">
+            <h1 id="top">Othello Game</h1>
+            <div id="gameBoard"></div>
+        </div>
+
+        <div id="rightDiv">
+            <h2 id="secondName"></h2>
+            <div id="blueBlock">2</div>
+            <h2 id="secondTotalScore"></h2>
+        </div>
+        
+    </div>
+
+    <script src="Othello.js"></script>
+</body>
+</html>
